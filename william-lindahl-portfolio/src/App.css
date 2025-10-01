@@ -3,8 +3,8 @@
 
 @theme {
 
-  --color-primary: oklch(0.7067 0.1307 167.29);
-  --color-secondary: oklch(0.3932 0.1307 167.29);
+  --color-primary: oklch(0.7 0.1307 167.29);
+  --color-secondary: oklch(0.25 0.1307 167.29);
 
   --color-muted: oklch(0.70 0 0);
   --color-strong: oklch(0.95 0 0);
@@ -13,6 +13,6 @@
 
   --color-bgPrimary: oklch(0.15 0 0);
   --color-bgSecondary: oklch(0.2 0 0);
-  --color-tertiary: oklch(0.3 0 0);
+  --color-bgTertiary: oklch(0.3 0 0);
 }
 

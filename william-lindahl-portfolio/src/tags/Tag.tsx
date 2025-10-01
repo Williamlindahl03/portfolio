@@ -1,14 +1,21 @@
 type TagProps = {
     text: string,
-    color: string
+    bgColor: string
+    borderColor: string,
+    textColor: string
 }
 
-function Tag({text, color}: TagProps) {
+function Tag({text, bgColor, borderColor, textColor}: TagProps) {
+
+  const bg = `var(--color-${bgColor})`;
+  const br = `var(--color-${borderColor})`;
+  const te = `var(--color-${textColor})`;
 
   return (
-    <>
-        <p className={`border border-highlight text-muted text-nowrap bg-tertiary w-min h-min px-2 rounded-full text-xs`}>{text}</p>
-    </>
+
+        <p style={{ 'backgroundColor': bg, 'borderColor': br, 'color': te }}
+        className={`border text-nowrap w-min h-min px-2 rounded-full text-xs`}>{text}</p>
+
   )
 }
 export default Tag;
