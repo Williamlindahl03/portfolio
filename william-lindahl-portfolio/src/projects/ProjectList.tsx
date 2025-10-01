@@ -1,6 +1,7 @@
 import ProjectCard from "./ProjectCard.tsx"
 import AsteroidsImage from "../assets/Asteroids.jpg";
 import KanbanImage from "../assets/KanbanApp.png";
+import SVTImage from "../assets/SVTApp.png";
 
 
 function Projectlist() {
@@ -15,7 +16,8 @@ function Projectlist() {
           listOfTags={["React", "Tailwind", "C#", "PostgreSQL", "RestAPI"]} 
           linkToCode={"https://github.com/Williamlindahl03"}
           linkToDemo={""}/>
-      <ProjectCard 
+      <ProjectCard
+          image={SVTImage}
           name={"Project at SVT Gävleborg"} 
           type="School"
           description={"Application for asking questions about legal documents from Acta Publica using OpenAI and RAG"} 
