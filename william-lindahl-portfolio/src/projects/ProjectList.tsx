@@ -2,12 +2,13 @@ import ProjectCard from "./ProjectCard.tsx"
 import AsteroidsImage from "../assets/Asteroids.jpg";
 import KanbanImage from "../assets/KanbanApp.png";
 import SVTImage from "../assets/SVTApp.png";
+import StatplayImage from "../assets/Statplay.jpg";
 
 
 function Projectlist() {
 
   return (
-    <div className='w-full grid grid-cols-3 gap-4 m-auto'>
+    <div className='w-full grid grid-cols-2 gap-4 m-auto'>
       <ProjectCard 
           image={KanbanImage}
           name={"Kanban App"} 
@@ -30,6 +31,14 @@ function Projectlist() {
           type="School"
           description={"Asteroids game with focus on using relevant design patterns"} 
           listOfTags={["Java", "Swing", "MVC", "Design Patterns"]} 
+          linkToCode={"https://github.com/Williamlindahl03"}
+          linkToDemo={""}/>
+      <ProjectCard 
+          image={StatplayImage}
+          name={"Statplay"} 
+          type="School"
+          description={"Hemsida med Sportstatistik"} 
+          listOfTags={["React", "JavaScript", "Bootstrap", "REST APIs"]} 
           linkToCode={"https://github.com/Williamlindahl03"}
           linkToDemo={""}/>
     </div>
