@@ -6,6 +6,7 @@ import Projectlist from './projects/ProjectList'
 import ExperienceCard from './experience/ExperienceCard'
 import Socials from "./socials/Socials";
 import About from "./socials/About";
+import Skills from "./tech-stack/Skills";
 
 function App() {
   const skills: string[] = ["React", "Tailwind", "HTML", "CSS", "PostgreSQL", "Java", "C#", "JavaScript", "SpringBoot", "Python", "Docker", "Git"]
@@ -17,6 +18,7 @@ function App() {
 
           <div className='size-full'>
             <About />
+            <Skills />
 
             <h1 className='text-primary font-bold text-3xl mt-8 mb-4'>Projects</h1>
             <Projectlist />

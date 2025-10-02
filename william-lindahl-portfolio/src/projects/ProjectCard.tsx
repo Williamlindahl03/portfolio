@@ -6,7 +6,7 @@ type ProjectProps = {
     image?: string,
     name: string,
     type: string,
-    description: string,
+    description?: string,
     listOfTags: string[],
     linkToCode?: string,
     linkToDemo?: string
@@ -23,7 +23,7 @@ function ProjectCard({image, name, type, description, listOfTags, linkToCode, li
             <Tag bgColor="secondary" borderColor="primary" textColor="primary" text={type}/>
           </div>
             
-            <p className={`text-muted linespace-0 leading-5 text-sm`}>{description}</p>
+            {/* <p className={`text-muted linespace-0 leading-5 text-sm`}>{description}</p> */}
             <TagList listOfTags={listOfTags} />
             <div className="flex flex-row mt-auto">
                 {linkToCode ? <a className="text-primary cursor-pointer">Code</a>: null}
