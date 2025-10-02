@@ -6,7 +6,7 @@ type SkillProp = {
 function Skill({logo, name}: SkillProp) {
 
   return (
-    <div className="h-min p-2 aspect-square flex flex-col justify-center items-center gap-1 rounded-lg bg-bgSecondary overflow-hidden shadow-lg shadow-black/100 border border-tertiary">
+    <div className="p-2 aspect-square flex flex-col justify-center items-center gap-1 rounded-lg bg-bgSecondary overflow-hidden shadow-lg shadow-black/100 border border-bgTertiary">
       {logo}
       <p className="text-muted">{name}</p>
     </div>

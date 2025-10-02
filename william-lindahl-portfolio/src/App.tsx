@@ -8,6 +8,7 @@ import Socials from "./socials/Socials";
 import About from "./socials/About";
 import Skills from "./tech-stack/Skills";
 import Header from "./header/Header";
+import Footer from "./footer/Footer";
 
 function App() {
   const skills: string[] = ["React", "Tailwind", "HTML", "CSS", "PostgreSQL", "Java", "C#", "JavaScript", "SpringBoot", "Python", "Docker", "Git"]
@@ -20,39 +21,43 @@ function App() {
           <div id="page" className='size-full'>
             <Header />
             <About />
-            <Skills />
 
-            <h1 id="projects" className='text-primary font-bold text-3xl mt-20 mb-4'>Projects</h1>
-            <Projectlist />
-            <h1 id="experience" className='text-primary font-bold text-3xl mt-8 mb-4'>Education</h1>
-            <div className='flex flex-col [&>*:not(:last-child)]:h-32'>
-              <ExperienceCard 
-                name={"University of Gävle"} 
-                timePeriod='2022 - 2025'
-                description={"bachealors degree in computer engineering with focus on java programming"}
-                listOfTags={["Java", "OOP", "Spring boot", "React", "Git", "HTML","CSS", "Javascript"]}/>
-              
-              <ExperienceCard 
-                  name={"Introduction to Machine Learning"} 
-                  timePeriod='2023 - 2024'
-                  description={"Intro course to machine learning at University of Gävle"}
-                  listOfTags={["Machine learning", "GPT"]}/>
-              
-              <ExperienceCard 
-                  name={"Bessemerskolan"} 
-                  timePeriod='2019 - 2022'
+            <div>
+              <h1 id="projects" className='text-primary font-bold text-3xl mt-20 mb-4'>Projects</h1>
+              <Projectlist />
+            </div>
+
+            <div>
+              <h1 id="experience" className='text-primary font-bold text-3xl mt-20 mb-4'>Education</h1>
+              <div className='flex flex-col [&>*:not(:last-child)]:h-32'>
+                <ExperienceCard 
+                  name={"University of Gävle"} 
+                  timePeriod='2022 - 2025'
                   description={"bachealors degree in computer engineering with focus on java programming"}
-                  listOfTags={["Python", "OOP", "HTML", "CSS", "JavaScript", "JQuery","C#"]}/>
+                  listOfTags={["Java", "OOP", "Spring boot", "React", "Git", "HTML","CSS", "Javascript"]}/>
+                
+                <ExperienceCard 
+                    name={"Introduction to Machine Learning"} 
+                    timePeriod='2023 - 2024'
+                    description={"Intro course to machine learning at University of Gävle"}
+                    listOfTags={["Machine learning", "GPT"]}/>
+                
+                <ExperienceCard 
+                    name={"Bessemerskolan"} 
+                    timePeriod='2019 - 2022'
+                    description={"bachealors degree in computer engineering with focus on java programming"}
+                    listOfTags={["Python", "OOP", "HTML", "CSS", "JavaScript", "JQuery","C#"]}/>
+              </div>
+              <h1 className='text-primary font-bold text-3xl mt-20 mb-4'>Work Experience</h1>
+              <ExperienceCard 
+                  name={"Brevbärare, PostNord"} 
+                  timePeriod='2023 - 2024'
+                  location='Sanviken'
+                  description={"bachealors degree in computer engineering with focus on java programming"}
+                  listOfTags={[]}/>
             </div>
             
-            <h1 className='text-primary font-bold text-3xl mt-8 mb-4'>Work Experience</h1>
-            <ExperienceCard 
-                name={"Brevbärare, PostNord"} 
-                timePeriod='2023 - 2024'
-                location='Sanviken'
-                description={"bachealors degree in computer engineering with focus on java programming"}
-                listOfTags={[]}/>
-            
+            <Footer />
           </div>
 
         </div>

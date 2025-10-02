@@ -4,7 +4,8 @@
 @theme {
 
   --color-primary: oklch(0.7 0.1307 167.29);
-  --color-secondary: oklch(0.25 0.1307 167.29);
+  --color-secondary: oklch(0.4 0.1307 167.29);
+  --color-tertiary: oklch(0.25 0.1307 167.29);
 
   --color-muted: oklch(0.70 0 0);
   --color-strong: oklch(0.95 0 0);

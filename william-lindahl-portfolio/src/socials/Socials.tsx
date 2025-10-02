@@ -1,4 +1,4 @@
-import { GithubIcon, LinkedInIcon } from "../svgs/svgs";
+import { DownloadIcon, GithubIcon, LinkedInIcon } from "../svgs/svgs";
 
 function Socials() {
 
@@ -9,6 +9,9 @@ function Socials() {
       </a>
       <a target="_blank" href='https://github.com/Williamlindahl03?tab=repositories'>
         <GithubIcon />
+      </a>
+      <a href='' download='william_lindahl_cv' className="text-strong px-1 rounded outline outline-strong flex flex-row gap-1 items-center hover:bg-strong hover:text-bgPrimary ">
+        <p>Resume</p><DownloadIcon width="19"/>
       </a>
     </div>
   )

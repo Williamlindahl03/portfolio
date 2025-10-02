@@ -16,12 +16,12 @@ type ProjectProps = {
 function ProjectCard({image, name, type, description, listOfTags, linkToCode, linkToDemo}: ProjectProps) {
 
   return (
-    <div className="min-w-[200px] aspect-square flex flex-col rounded-lg bg-bgSecondary overflow-hidden shadow-lg shadow-black/100 border border-bgTertiary">
-        <img src={image ? image : myImage} className="grow"></img>
-        <div className="px-4 py-2 flex flex-col gap-1 h-32">
-          <div className="flex flex-row justify-between items-center">
+    <div className="min-w-[200px] flex flex-col rounded-lg bg-bgSecondary overflow-hidden shadow-lg shadow-black/100 border border-bgTertiary">
+        <img src={image ? image : myImage} ></img>
+        <div className="px-4 py-2 flex flex-col gap-1 grow">
+          <div className="flex flex-row justify-start gap-2 items-center py-2">
             <h1 className={`text-strong font-bold text-lg leading-5`}>{name}</h1>
-            <Tag bgColor="secondary" borderColor="primary" textColor="primary" text={type}/>
+            <Tag bgColor="tertiary" borderColor="secondary" textColor="primary" text={type}/>
           </div>
             
             {/* <p className={`text-muted linespace-0 leading-5 text-sm`}>{description}</p> */}

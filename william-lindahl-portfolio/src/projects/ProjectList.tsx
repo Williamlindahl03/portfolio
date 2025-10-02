@@ -8,7 +8,7 @@ import StatplayImage from "../assets/Statplay.jpg";
 function Projectlist() {
 
   return (
-    <div className='w-full grid grid-cols-2 gap-4 m-auto'>
+    <div className='w-full grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-4 m-auto'>
       <ProjectCard 
           image={KanbanImage}
           name={"Kanban App"} 
