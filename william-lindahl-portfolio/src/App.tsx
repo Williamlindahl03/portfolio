@@ -22,13 +22,13 @@ function App() {
             <Header />
             <About />
 
-            <div>
-              <h1 id="projects" className='text-primary font-bold text-3xl mt-20 mb-4'>Projects</h1>
+            <div id="projects">
+              <h1 className='text-primary font-bold text-3xl mt-20 mb-4'>Projects</h1>
               <Projectlist />
             </div>
 
-            <div>
-              <h1 id="experience" className='text-primary font-bold text-3xl mt-20 mb-4'>Education</h1>
+            <div id="experience">
+              <h1 className='text-primary font-bold text-3xl mt-20 mb-4'>Education</h1>
               <div className='flex flex-col [&>*:not(:last-child)]:h-32'>
                 <ExperienceCard 
                   name={"University of Gävle"} 
@@ -48,6 +48,7 @@ function App() {
                     description={"bachealors degree in computer engineering with focus on java programming"}
                     listOfTags={["Python", "OOP", "HTML", "CSS", "JavaScript", "JQuery","C#"]}/>
               </div>
+              
               <h1 className='text-primary font-bold text-3xl mt-20 mb-4'>Work Experience</h1>
               <ExperienceCard 
                   name={"Brevbärare, PostNord"} 

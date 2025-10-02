@@ -27,7 +27,7 @@ function Header() {
             setActive(visible[0].target.id); // pick closest to top
             }
         },
-        { threshold: 1 }
+        { threshold: 0.5 }
         );
 
         // Observe only the navSections
@@ -48,14 +48,14 @@ function Header() {
     }
 
     return (
-        <div className={`sticky top-2`}> 
+        <div className={`sticky top-2 z-100`}> 
             <div className={`w-[350px] m-auto grid auto-cols-fr grid-flow-col flex-nowrap text-muted p-1 rounded-full transition-all duration-200 overflow-hidden ${scrolled ? "outline outline-highlight bg-bgSecondary shadow-lg shadow-black" : "py-1 outline-none shadow-none"}`}> 
                 <button onClick={() => scroll({top: 0, behavior: 'smooth'})} 
-                        className={`transition-all border-black/0 duration-400 flex-1 rounded-full hover:text-strong z-1 ${active === "about" ? "text-primary border border-secondary bg-tertiary" : ""}`}>Info</button>
+                        className={`transition-all border-black/0 duration-400 flex-1 rounded-full cursor-pointer ${active === "about" ? "text-primary hover:text-primary border border-secondary bg-tertiary" : "hover:text-strong"}`}>Info</button>
                 <button onClick={() => scrollToElement("projects")}
-                        className={`transition-all border-black/0 duration-400 flex-1 rounded-full hover:text-strong z-1 ${active === "projects" ? "text-primary border border-secondary bg-tertiary" : ""}`}>Projekt</button>
+                        className={`transition-all border-black/0 duration-400 flex-1 rounded-full cursor-pointer ${active === "projects" ? "text-primary hover:text-primary border border-secondary bg-tertiary" : "hover:text-strong"}`}>Projekt</button>
                 <button onClick={() => scrollToElement("experience")} 
-                        className={`transition-all border-black/0 duration-400 flex-1 rounded-full hover:text-strong z-1 ${active === "experience" ? "text-primary border border-secondary bg-tertiary" : ""}`}>Erfarenhet</button>
+                        className={`transition-all border-black/0 duration-400 flex-1 rounded-full cursor-pointer ${active === "experience" ? "text-primary hover:text-primary border border-secondary bg-tertiary" : "hover:text-strong"}`}>Erfarenhet</button>
             </div>
         </div>
     );
