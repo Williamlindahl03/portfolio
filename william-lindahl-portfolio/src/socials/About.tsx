@@ -4,7 +4,7 @@ import Socials from "./Socials";
 function About() {
 
   return (
-    <div className="flex flex-row justify-between">
+    <div id="about" className="flex flex-row justify-between">
         <div className="max-w-[350px]">
             <h1 className='text-primary text-4xl font-bold'>William Lindahl</h1>
             <p className='text-strong pb-2 leading-5'>Nyexaminerad <b>Dataingenjör</b> med intresse för både <b>Frontend</b> och <b>Backend</b>.</p>

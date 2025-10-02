@@ -1,5 +1,5 @@
 import { JavaIcon, CSharpIcon, PythonIcon, TypeScriptIcon, ReactIcon, TailwindIcon, GithubIcon, VSCodeIcon, DotNetIcon, PostgreSQLIcon } from "../svgs/svgs.tsx";
-import Skill from "./skill.tsx";
+import Skill from "./Skill.tsx";
 
 
 function Skills() {
