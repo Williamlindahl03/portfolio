@@ -9,6 +9,7 @@ import About from "./socials/About";
 import Skills from "./tech-stack/Skills";
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
+import Experience from "./experience/Experience";
 
 function App() {
   const skills: string[] = ["React", "Tailwind", "HTML", "CSS", "PostgreSQL", "Java", "C#", "JavaScript", "SpringBoot", "Python", "Docker", "Git"]
@@ -29,6 +30,7 @@ function App() {
 
             <div id="experience">
               <h1 className='text-primary font-bold text-3xl mt-20 mb-4'>Education</h1>
+              <Experience/>
               <div className='flex flex-col [&>*:not(:last-child)]:h-32'>
                 <ExperienceCard 
                   name={"University of Gävle"} 
