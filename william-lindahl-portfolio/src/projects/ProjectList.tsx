@@ -12,7 +12,7 @@ function Projectlist() {
       <ProjectCard 
           image={KanbanImage}
           name={"Kanban App"} 
-          type="Personal"
+          type="Eget projekt"
           description={"A project management application where you can create kanban boards"} 
           listOfTags={["React", "Tailwind", "C#", "PostgreSQL", "RestAPI"]} 
           linkToCode={"https://github.com/Williamlindahl03"}
@@ -20,7 +20,7 @@ function Projectlist() {
       <ProjectCard
           image={SVTImage}
           name={"Project at SVT Gävleborg"} 
-          type="School"
+          type="Skolprojekt"
           description={"Application for asking questions about legal documents from Acta Publica using OpenAI and RAG"} 
           listOfTags={["React", "Python", "RAG","Tailwind",  "LangChain", "RestAPI"]} 
           linkToCode={"https://github.com/Williamlindahl03"}
@@ -28,7 +28,7 @@ function Projectlist() {
       <ProjectCard 
           image={AsteroidsImage}
           name={"Asteroids"} 
-          type="School"
+          type="Skolprojekt"
           description={"Asteroids game with focus on using relevant design patterns"} 
           listOfTags={["Java", "Swing", "MVC", "Design Patterns"]} 
           linkToCode={"https://github.com/Williamlindahl03"}
@@ -36,7 +36,7 @@ function Projectlist() {
       <ProjectCard 
           image={StatplayImage}
           name={"Statplay"} 
-          type="School"
+          type="Skolprojekt"
           description={"Hemsida med Sportstatistik"} 
           listOfTags={["React", "JavaScript", "Bootstrap", "REST APIs"]} 
           linkToCode={"https://github.com/Williamlindahl03"}
