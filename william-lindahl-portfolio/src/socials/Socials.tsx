@@ -10,8 +10,8 @@ function Socials() {
       <a target="_blank" href='https://github.com/Williamlindahl03?tab=repositories'>
         <GithubIcon />
       </a>
-      <a href='' download='william_lindahl_cv' className="text-strong px-1 rounded outline outline-muted hover:outline-strong flex flex-row gap-1 items-center hover:bg-strong hover:text-bgPrimary ">
-        <p>Resume</p><DownloadIcon width="19"/>
+      <a href='' download='william_lindahl_cv' className="text-strong px-2 rounded outline outline-muted hover:outline-strong flex flex-row gap-1 items-center hover:bg-strong hover:text-bgPrimary ">
+        <p>CV</p><DownloadIcon width="19"/>
       </a>
     </div>
   )
