@@ -24,14 +24,14 @@ function App() {
             <About />
 
             <div id="projects">
-              <h1 className='text-primary font-bold text-3xl mt-20 mb-4'>Projects</h1>
+              <h1 className='text-primary font-bold text-3xl mt-20 mb-4'>Projekt</h1>
               <Projectlist />
             </div>
 
             <div id="experience">
-              <h1 className='text-primary font-bold text-3xl mt-20 mb-4'>Education</h1>
+              <h1 className='text-primary font-bold text-3xl mt-20 mb-4'>Erfarenhet</h1>
               <Experience/>
-              <div className='flex flex-col [&>*:not(:last-child)]:h-32'>
+              {/* <div className='flex flex-col [&>*:not(:last-child)]:h-32'>
                 <ExperienceCard 
                   name={"University of Gävle"} 
                   timePeriod='2022 - 2025'
@@ -49,7 +49,7 @@ function App() {
                     timePeriod='2019 - 2022'
                     description={"bachealors degree in computer engineering with focus on java programming"}
                     listOfTags={["Python", "OOP", "HTML", "CSS", "JavaScript", "JQuery","C#"]}/>
-              </div>
+              </div> */}
               
               <h1 className='text-primary font-bold text-3xl mt-20 mb-4'>Work Experience</h1>
               <ExperienceCard 
