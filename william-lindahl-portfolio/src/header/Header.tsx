@@ -50,13 +50,13 @@ function Header() {
 
     return (
         <div className={`sticky top-2 z-100`}> 
-            <div className={`w-[350px] max-w-full m-auto grid auto-cols-fr grid-flow-col flex-nowrap text-muted p-1 rounded-full transition-all duration-200 overflow-hidden ${scrolled ? "outline outline-highlight bg-bgSecondary shadow-lg shadow-black" : "py-1 outline-none shadow-none"}`}> 
+            <div className={`w-[350px] max-w-full gap-1 m-auto grid auto-cols-fr grid-flow-col text-muted p-1 *:truncate rounded-full transition-all duration-200 overflow-hidden ${scrolled ? "outline outline-highlight bg-bgSecondary shadow-lg shadow-black" : "py-1 outline-none shadow-none"}`}> 
                 <button onClick={() => scroll({top: 0, behavior: 'smooth'})} 
-                        className={`transition-all border-black/0 duration-400 flex-1 flex flex-row item-center gap-1 justify-center rounded-full cursor-pointer ${active === "about" ? "text-primary hover:text-primary border border-secondary bg-tertiary" : "hover:text-strong"}`}><AboutIcon width='16'/>Info</button>
+                        className={`transition-all border border-black/0 duration-400 flex-1 flex flex-row item-center gap-1 justify-center rounded-full cursor-pointer ${active === "about" ? "text-primary hover:text-primary border border-secondary bg-tertiary" : "hover:text-strong"}`}><AboutIcon width='16'/>Info</button>
                 <button onClick={() => scrollToElement("projects")}
-                        className={`transition-all border-black/0 duration-400 flex-1 flex flex-row item-center gap-1 justify-center rounded-full cursor-pointer ${active === "projects" ? "text-primary hover:text-primary border border-secondary bg-tertiary" : "hover:text-strong"}`}><ProjectsIcon width='16'/>Projekt</button>
+                        className={`transition-all border border-black/0 duration-400 flex-1 flex flex-row item-center gap-1 justify-center rounded-full cursor-pointer ${active === "projects" ? "text-primary hover:text-primary border border-secondary bg-tertiary" : "hover:text-strong"}`}><ProjectsIcon width='16'/>Projekt</button>
                 <button onClick={() => scrollToElement("experience")} 
-                        className={`transition-all border-black/0 duration-400 flex-1 flex flex-row item-center gap-1 justify-center rounded-full cursor-pointer ${active === "experience" ? "text-primary hover:text-primary border border-secondary bg-tertiary" : "hover:text-strong"}`}><ExperienceIcon width='16'/>Erfarenhet</button>
+                        className={`transition-all border border-black/0 duration-400 flex-1 flex flex-row item-center gap-1 justify-center rounded-full cursor-pointer ${active === "experience" ? "text-primary hover:text-primary border border-secondary bg-tertiary" : "hover:text-strong"}`}><ExperienceIcon width='16'/>Erfarenhet</button>
             </div>
         </div>
     );

@@ -18,14 +18,15 @@ function About() {
                     både <b>Frontend</b> och <b>Backend</b>.
                 </h2>
                 <div className="pb-4 flex flex-col gap-1">
-                    <div className="flex flex-row gap-1">
+                    <button className="w-min flex flex-row gap-1 cursor-pointer group">
                         <EmailIcon />
-                        <p className='text-muted'>Williamlindahl03@gmail.com</p>
-                    </div>
-                    <div className="flex flex-row gap-1 items-center">
-                        <LocationIcon />
-                        <p className='text-muted'>Gävleborg, Sweden</p>
-                    </div>
+                        <p className='text-muted group-hover:text-strong'>Williamlindahl03@gmail.com</p>
+                    </button>
+
+                    <a className='text-muted flex flex-row gap-1 items-center group' href="https://www.google.com/maps/place/Sandviken/@60.6188383,16.7308793,8606m/data=!3m2!1e3!4b1!4m6!3m5!1s0x465e02576d1ea80d:0x65dac688d0eb8b6d!8m2!3d60.621607!4d16.7759179!16s%2Fm%2F02rlw1q?entry=ttu&g_ep=EgoyMDI1MTAwMS4wIKXMDSoASAFQAw%3D%3D" >
+                        <LocationIcon /><p className='text-muted group-hover:text-strong'>Sandviken, Gävleborg</p>
+                    </a>
+
                 </div>
                 <Socials />
             </div>

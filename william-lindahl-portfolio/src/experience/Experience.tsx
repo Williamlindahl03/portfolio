@@ -21,24 +21,24 @@ function Experience() {
                 {showEducation ? 
                 <div className="flex flex-col gap-2">
                     <ExperienceCard 
-                        name={"University of Gävle"} 
+                        name={"Dataingenjörsprogrammet, Högskolan i Gävle"} 
                         logoImgSrc={HiGLogo}
                         timePeriod='Aug 2022 - Jun 2025'
-                        description={"bachealors degree in computer engineering with focus on java programming"}
+                        description={"kandidatexamen från dataingenjörsprogrammet på Högskolan i Gävle med fokus på systemutveckling, främst i Java."}
                         listOfTags={["Java", "OOP", "Spring boot", "React", "Git", "HTML","CSS", "Javascript"]}/>
                     
                     <ExperienceCard 
                         name={"Introduction to Machine Learning"} 
                         logoImgSrc={HiGLogo}
                         timePeriod='Aug 2024 - Jan 2025'
-                        description={"Intro course to machine learning at University of Gävle"}
-                        listOfTags={["Machine learning", "GPT"]}/>
+                        description={"Introkurs inom Maskininlärning på Högskolan i Gävle"}
+                        listOfTags={["Maskininlärning", "Neural networks", "Transformers", "Python"]}/>
                     
                     <ExperienceCard 
-                        name={"Bessemerskolan"} 
+                        name={"Teknikprogrammet, Bessemerskolan"} 
                         logoImgSrc={BessemerLogo}
                         timePeriod='Aug 2019 - Jun 2022'
-                        description={"bachealors degree in computer engineering with focus on java programming"}
+                        description={"Tog examen från Teknikprogrammet med inriktning Informationsteknik"}
                         listOfTags={["Python", "OOP", "HTML", "CSS", "JavaScript", "JQuery","C#", "Arduino"]}/>
                 </div>
                 :
@@ -47,7 +47,7 @@ function Experience() {
                         name={"Brevbärare, PostNord"} 
                         logoImgSrc={PostNordLogo}
                         timePeriod='Jun 2023 - Aug 2024'
-                        description={"bachealors degree in computer engineering with focus on java programming"}
+                        description={"Sommarjobbade två år som Brevbärare på PostNord i Sandviken och jobbade även extra där emellan under studierna. Jobbade mycket självständigt och under stress."}
                         listOfTags={["Python", "OOP", "HTML", "CSS", "JavaScript", "JQuery","C#", "Arduino"]}/>
                 </div>}
             </div>

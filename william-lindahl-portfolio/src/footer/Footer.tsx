@@ -1,4 +1,4 @@
-import Socials from "../socials/Socials";
+import Socials from "../about/Socials";
 import { EmailIcon } from "../svgs/svgs";
 
 function Footer() {

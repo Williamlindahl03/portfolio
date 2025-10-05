@@ -4,8 +4,8 @@ import './App.css'
 import TagList from './tags/TagList'
 import Projectlist from './projects/ProjectList'
 import ExperienceCard from './experience/ExperienceCard'
-import Socials from "./socials/Socials";
-import About from "./socials/About";
+import Socials from "./about/Socials";
+import About from "./about/About";
 import Skills from "./tech-stack/Skills";
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
@@ -24,12 +24,12 @@ function App() {
             <About />
 
             <div id="projects">
-              <h1 className='text-primary font-bold text-3xl mt-20 mb-4'>Projekt</h1>
+              <h1 className='text-strong font-bold text-3xl mt-6 pt-14 pb-4'>Projekt</h1>
               <Projectlist />
             </div>
 
             <div id="experience">
-              <h1 className='text-primary font-bold text-3xl mt-20 mb-4'>Erfarenhet</h1>
+              <h1 className='text-strong font-bold text-3xl mt-6 pt-14 pb-4'>Erfarenhet</h1>
               <Experience/>
               {/* <div className='flex flex-col [&>*:not(:last-child)]:h-32'>
                 <ExperienceCard 
