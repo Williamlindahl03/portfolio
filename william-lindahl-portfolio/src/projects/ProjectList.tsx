@@ -3,6 +3,7 @@ import AsteroidsImage from "../assets/Asteroids.jpg";
 import KanbanImage from "../assets/KanbanApp.png";
 import SVTImage from "../assets/SVTApp.png";
 import StatplayImage from "../assets/Statplay.jpg";
+import WordleImage from "../assets/wordle.png";
 
 
 function Projectlist() {
@@ -13,6 +14,7 @@ function Projectlist() {
           image={KanbanImage}
           name={"Kanban App"} 
           type="Eget projekt"
+          time="Okt 2025"
           description={"A project management application where you can create kanban boards"} 
           listOfTags={["React", "Tailwind", "C#", "PostgreSQL", "RestAPI"]} 
           linkToCode={"https://github.com/Williamlindahl03"}
@@ -21,6 +23,7 @@ function Projectlist() {
           image={SVTImage}
           name={"Project at SVT Gävleborg"} 
           type="Skolprojekt"
+          time="Mar 2025"
           description={"Application for asking questions about legal documents from Acta Publica using OpenAI and RAG"} 
           listOfTags={["React", "Python", "RAG","Tailwind",  "LangChain", "RestAPI"]} 
           linkToCode={"https://github.com/Williamlindahl03"}
@@ -29,6 +32,7 @@ function Projectlist() {
           image={AsteroidsImage}
           name={"Asteroids"} 
           type="Skolprojekt"
+          time="Mar 2025"
           description={"Asteroids game with focus on using relevant design patterns"} 
           listOfTags={["Java", "Swing", "MVC", "Design Patterns"]} 
           linkToCode={"https://github.com/Williamlindahl03"}
@@ -37,10 +41,20 @@ function Projectlist() {
           image={StatplayImage}
           name={"Statplay"} 
           type="Skolprojekt"
+          time="Dec 2024"
           description={"Hemsida med Sportstatistik"} 
-          listOfTags={["React", "JavaScript", "Bootstrap", "REST APIs"]} 
+          listOfTags={["React", "JavaScript", "Bootstrap", "REST API"]} 
           linkToCode={"https://github.com/Williamlindahl03"}
           linkToDemo={""}/>
+      <ProjectCard 
+          image={WordleImage}
+          name={"Wordle"} 
+          type="Eget projekt"
+          time="Maj 2022"
+          description={"Hemsida med Sportstatistik"} 
+          listOfTags={["HTML", "CSS", "JavaScript"]} 
+          linkToCode={"https://github.com/Williamlindahl03"}
+          linkToDemo={"https://williamlind03.github.io/wordle_game/"}/>
     </div>
   )
 }

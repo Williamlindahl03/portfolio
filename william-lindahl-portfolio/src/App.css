@@ -15,5 +15,8 @@
   --color-bgPrimary: oklch(0.15 0 0);
   --color-bgSecondary: oklch(0.2 0 0);
   --color-bgTertiary: oklch(0.3 0 0);
+
+
+  --shadow-up: 0px 1px 25px 10px rgba(0,0,0,0.5);
 }
 

@@ -3,16 +3,18 @@ import TagList from "../tags/TagList";
 type ExperienceProps = {
     name: string,
     description: string,
+    logoImgSrc: string,
     listOfTags: string[],
     timePeriod: string,
     location?: string,
 }
 
-function ExperienceCard({name, description, listOfTags, timePeriod, location}: ExperienceProps) {
+function ExperienceCard({name, description, logoImgSrc, listOfTags, timePeriod, location}: ExperienceProps) {
 
   return (
-    <div className="flex flex-row p-4 bg-bgSecondarys rounded-lg border border-bgSecondary">
-      <div className="px-4 flex flex-col gap-1 grow bg-bgSecondar border-l border-l-muted">
+    <div className="flex flex-row items-center p-4 bg-bgSecondarys rounded-lg border border-bgSecondary">
+      <img src={logoImgSrc} className="size-16 mx-4 rounded-lg"/>
+      <div className="px-4 flex flex-col gap-1 bg-bgSecondar border-l border-l-muted">
         <p className="text-xs text-highlight">{timePeriod}</p>
         <h1 className={`text-strong font-bold text-lg leading-5`}>{name}</h1>
         {location ? <p className="text-highlight text-xs">{location}</p>:null}

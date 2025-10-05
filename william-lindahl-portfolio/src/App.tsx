@@ -51,13 +51,13 @@ function App() {
                     listOfTags={["Python", "OOP", "HTML", "CSS", "JavaScript", "JQuery","C#"]}/>
               </div> */}
               
-              <h1 className='text-primary font-bold text-3xl mt-20 mb-4'>Work Experience</h1>
+              {/* <h1 className='text-primary font-bold text-3xl mt-20 mb-4'>Work Experience</h1>
               <ExperienceCard 
                   name={"Brevbärare, PostNord"} 
                   timePeriod='2023 - 2024'
                   location='Sanviken'
                   description={"bachealors degree in computer engineering with focus on java programming"}
-                  listOfTags={[]}/>
+                  listOfTags={[]}/> */}
             </div>
             
             <Footer />
