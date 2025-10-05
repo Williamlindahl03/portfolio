@@ -2,8 +2,10 @@ import ProjectCard from "./ProjectCard.tsx"
 import AsteroidsImage from "../assets/Asteroids.jpg";
 import KanbanImage from "../assets/KanbanApp.png";
 import SVTImage from "../assets/SVTApp.png";
+import SVTVideo from "/SVTAppDemo.mp4";
 import StatplayImage from "../assets/Statplay.jpg";
 import WordleImage from "../assets/wordle.png";
+import ProjectDemoModal from "./ProjectDemoModal.tsx";
 
 
 function Projectlist() {
@@ -21,6 +23,7 @@ function Projectlist() {
           linkToDemo={""}/>
       <ProjectCard
           image={SVTImage}
+          video={SVTVideo}
           name={"Project at SVT Gävleborg"} 
           type="Skolprojekt"
           time="Mar 2025"
@@ -55,6 +58,7 @@ function Projectlist() {
           listOfTags={["HTML", "CSS", "JavaScript"]} 
           linkToCode={"https://github.com/Williamlindahl03"}
           linkToDemo={"https://williamlind03.github.io/wordle_game/"}/>
+      
     </div>
   )
 }

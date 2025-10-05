@@ -18,7 +18,7 @@ function About() {
                     både <b>Frontend</b> och <b>Backend</b>.
                 </h2>
                 <div className="pb-4 flex flex-col gap-1">
-                    <button className="w-min flex flex-row gap-1 cursor-pointer group">
+                    <button onClick={() => {navigator.clipboard.writeText("Williamlindahl03@gmail.com")}} className="w-min flex flex-row gap-1 cursor-pointer group">
                         <EmailIcon />
                         <p className='text-muted group-hover:text-strong'>Williamlindahl03@gmail.com</p>
                     </button>
