@@ -10,7 +10,7 @@ function Experience() {
     const [showEducation, setShowEducation] = useState(true);
 
     return(
-        <div className="w-full h-[600px]">
+        <div className="w-full h-[750px] sm:h-[600px]">
             <div className="p-1 flex flex-row gap-1 bg-bgSecondary border border-bgTertiary rounded-lg 
                             *:w-[50%] *:cursor-pointer *:rounded-md *:hover:text-strong *:border *:transition-all *:duration-300">
                 <button onClick={() => setShowEducation(true)} 
