@@ -2,6 +2,7 @@ import ExperienceCard from "./ExperienceCard";
 import HiGLogo from "../assets/hig-logo.png";
 import BessemerLogo from "../assets/bessemer-logo.jpg";
 import PostNordLogo from "../assets/postnord-logo.png";
+import HogboBrukLogo from "../assets/hogbo-bruk-logo.png"
 import { useState } from "react";
 
 function Experience() {
@@ -42,13 +43,19 @@ function Experience() {
                         listOfTags={["Python", "OOP", "HTML", "CSS", "JavaScript", "JQuery","C#", "Arduino"]}/>
                 </div>
                 :
-                <div>
+                <div className="flex flex-col gap-2">
                     <ExperienceCard 
                         name={"Brevbärare, PostNord"} 
                         logoImgSrc={PostNordLogo}
                         timePeriod='Jun 2023 - Aug 2024'
                         description={"Sommarjobbade två år som Brevbärare på PostNord i Sandviken och jobbade även extra där emellan under studierna. Jobbade mycket självständigt och under stress."}
-                        listOfTags={["Python", "OOP", "HTML", "CSS", "JavaScript", "JQuery","C#", "Arduino"]}/>
+                        listOfTags={[]}/>
+                    <ExperienceCard 
+                        name={"Parkarbetare, Högbo bruk"} 
+                        logoImgSrc={HogboBrukLogo}
+                        timePeriod='Jun 2022 - juli 2022'
+                        description={"Sommarjobbade som parkarbetare vid Högbo bruk, klippte gräs, trimmade och krattade."}
+                        listOfTags={[]}/>
                 </div>}
             </div>
         </div>

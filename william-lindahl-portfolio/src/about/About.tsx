@@ -7,13 +7,13 @@ function About() {
 
   return (
     <>
-        <div id="about" className="flex flex-row-reverse flex-wrap item-left justify-end mt-10 sm:mt-20">
+        <div id="about" className="flex flex-col items-center sm:flex-row-reverse flex-wrap item-left justify-end mt-10 sm:mt-40">
             <div className="flex flex-col items-end">
                 <img className="h-[215px] rounded-full rotate-y-180 p-1 mb-4 border border-muted" src={profile}/> 
             </div>
             <div className="flex flex-col gap-1 grow & > *">
                 <h1 className='text-primary text-5xl sm:text-5xl font-bold'>William Lindahl</h1>
-                <h2 className='max-w-[400px] text-lg leading-5 text-muted pb-4 [&_b]:text-strong'>
+                <h2 className='max-w-[350px] text-lg leading-5 text-muted pb-4 [&_b]:text-strong'>
                     Nyexaminerad <b>Dataingenjör</b> med intresse för utveckling inom
                     både <b>Frontend</b> och <b>Backend</b>.
                 </h2>

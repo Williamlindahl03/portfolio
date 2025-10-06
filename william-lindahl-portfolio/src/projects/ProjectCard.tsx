@@ -21,32 +21,39 @@ function ProjectCard({image, video, name, type, time, description, listOfTags, l
 
   const [showDemo, setShowDemo] = useState(false);
 
+  function closeDemoModal() {
+    setShowDemo(!showDemo);
+  }
+
   return (
-    <div className="min-w-[200px] flex flex-col rounded-lg bg-bgSecondary overflow-hidden shadow-lg shadow-black/100 border border-bgTertiary"
-          onClick={() => setShowDemo(true)}>
-        <img src={image ? image : myImage} className=""></img>
-        <div className="px-4 py-2 flex flex-col gap-1 grow shadow-up">
-          <div className="flex flex-row justify-start gap-2 items-center">
-            <h1 className={`text-strong font-bold text-lg leading-5`}>{name}</h1>
-            <Tag bgColor="tertiary" borderColor="secondary" textColor="primary" text={type}/>
-          </div>
-            <p className="text-sm text-highlight">{time}</p>
-            {/* <p className={`text-muted linespace-0 leading-5 text-sm`}>{description}</p> */}
-            <TagList listOfTags={listOfTags} />
-            <div className="flex flex-row justify-between mt-auto">
-                {linkToCode ? <a className="text-primary cursor-pointer">
-                                <div className="flex flex-row gap-1">
-                                  <p>Kod</p><GithubIcon width="16" color="var(--color-primary)"/>
-                                </div>
-                              </a>: null}
-                {linkToDemo ? <a href={linkToDemo} className="text-primary cursor-pointer">
-                                <div className="flex flex-row gap-1">
-                                  <p>Besök</p><NewPageIcon width="16" color="var(--color-primary)"/>
-                                </div>
-                              </a>: null}
+    <>
+      <div className="min-w-[200px] flex flex-col rounded-lg bg-bgSecondary overflow-hidden shadow-lg shadow-black/100 border border-bgTertiary 
+                      cursor-pointer hover:border-highlight hover:shadow-xl transition-all duration-200"
+            onClick={() => closeDemoModal()}>
+          <img src={image ? image : myImage} className=""></img>
+          <div className="px-4 py-2 flex flex-col gap-1 grow shadow-up">
+            <div className="flex flex-row justify-start gap-2 items-center">
+              <h1 className={`text-strong font-bold text-lg leading-5`}>{name}</h1>
+              <Tag bgColor="tertiary" borderColor="secondary" textColor="primary" text={type}/>
             </div>
-        </div>
-        {video && showDemo ? <ProjectDemoModal 
+              <p className="text-xs text-highlight">{time}</p>
+              {/* <p className={`text-muted linespace-0 leading-5 text-sm`}>{description}</p> */}
+              <TagList listOfTags={listOfTags} />
+              <div className="flex flex-row justify-between mt-auto">
+                  {linkToCode ? <a href={linkToCode} target="_blank" className="text-primary cursor-pointer">
+                                  <div className="flex flex-row gap-1">
+                                    <p>Kod</p><NewPageIcon width="16" color="var(--color-primary)"/>
+                                  </div>
+                                </a>: null}
+                  {linkToDemo ? <a href={linkToDemo} target="_blank" className="text-primary cursor-pointer">
+                                  <div className="flex flex-row gap-1">
+                                    <p>Besök</p><NewPageIcon width="16" color="var(--color-primary)"/>
+                                  </div>
+                                </a>: null}
+              </div>
+          </div>
+      </div>
+      {video && showDemo ? <ProjectDemoModal 
           video={video}
           name={name} 
           type={type}
@@ -54,8 +61,9 @@ function ProjectCard({image, video, name, type, time, description, listOfTags, l
           description={description} 
           listOfTags={listOfTags} 
           linkToCode={linkToCode}
-          linkToDemo={linkToDemo}/>:null}
-    </div>
+          linkToDemo={linkToDemo}
+          close={closeDemoModal}/>:null}
+    </>
   )
 }
 export default ProjectCard;

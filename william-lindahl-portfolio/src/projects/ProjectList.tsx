@@ -28,7 +28,7 @@ function Projectlist() {
           type="Skolprojekt"
           time="Mar 2025"
           description={"Application for asking questions about legal documents from Acta Publica using OpenAI and RAG"} 
-          listOfTags={["React", "Python", "RAG","Tailwind",  "LangChain", "RestAPI"]} 
+          listOfTags={["React", "Python", "RAG","Tailwind",  "LangChain", "RestAPI", "Agile", "Scrum"]} 
           linkToCode={"https://github.com/Williamlindahl03"}
           linkToDemo={""}/>
       <ProjectCard 
