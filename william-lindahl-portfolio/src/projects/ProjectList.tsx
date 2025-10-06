@@ -5,8 +5,6 @@ import SVTImage from "../assets/SVTApp.png";
 import SVTVideo from "/SVTAppDemo.mp4";
 import StatplayImage from "../assets/Statplay.jpg";
 import WordleImage from "../assets/wordle.png";
-import ProjectDemoModal from "./ProjectDemoModal.tsx";
-
 
 function Projectlist() {
 

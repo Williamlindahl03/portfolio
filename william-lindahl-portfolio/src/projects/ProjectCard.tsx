@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GithubIcon, NewPageIcon, WebsiteIcon } from "../svgs/svgs";
+import { NewPageIcon } from "../svgs/svgs";
 import Tag from "../tags/Tag";
 import TagList from "../tags/TagList";
 import myImage from "./project-placeholder.jpg";

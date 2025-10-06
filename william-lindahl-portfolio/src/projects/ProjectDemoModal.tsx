@@ -1,4 +1,4 @@
-import { CloseIcon, GithubIcon, NewPageIcon } from "../svgs/svgs";
+import { CloseIcon, NewPageIcon } from "../svgs/svgs";
 import Tag from "../tags/Tag";
 import TagList from "../tags/TagList";
 
