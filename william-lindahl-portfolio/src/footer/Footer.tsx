@@ -8,7 +8,7 @@ function Footer() {
             
             <div className="mb-2 flex flex-row gap-1 sm:flex-row-reverse sm:ml-auto sm:m-0">
                 <EmailIcon />
-                <p className="text-muted">Williamlindahl03@gmail.com</p>
+                <p className="text-muted">williamlindahl03@gmail.com</p>
             </div>
             <Socials />
         </div>
