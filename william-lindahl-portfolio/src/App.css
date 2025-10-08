@@ -3,6 +3,7 @@
 
 @theme {
 
+  /* Colors */
   --color-primary: oklch(0.7 0.1307 200);
   --color-secondary: oklch(0.4 0.1307 200);
   --color-tertiary: oklch(0.25 0.1307 200);
@@ -16,8 +17,13 @@
   --color-bgSecondary: oklch(0.2 0 0);
   --color-bgTertiary: oklch(0.3 0 0);
 
-
+/* Shadows */
   --shadow-up: 0px 1px 25px 10px rgba(0,0,0,0.5);
+
+  /* Breakpoints */
+  --breakpoint-xxs: 384px;
+  --breakpoint-xs: 480px;
+
 }
 
 :root {

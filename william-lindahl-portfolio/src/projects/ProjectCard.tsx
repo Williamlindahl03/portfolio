@@ -28,7 +28,7 @@ function ProjectCard({image, video, name, type, time, description, listOfTags, l
   return (
     <>
       <div className="min-w-[200px] flex flex-col rounded-lg bg-bgSecondary overflow-hidden shadow-lg shadow-black/100 border border-bgTertiary 
-                      cursor-pointer hover:border-highlight hover:shadow-xl transition-all duration-200"
+                      cursor-pointer hover:border-highlight hover:shadow-xl transition-all duration-200 hover:scale-[1.01]"
             onClick={() => closeDemoModal()}>
           <img src={image ? image : myImage} className=""></img>
           <div className="px-4 py-2 flex flex-col gap-1 grow shadow-up">

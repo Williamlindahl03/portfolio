@@ -22,7 +22,7 @@ function Experience() {
                 {showEducation ? 
                 <div className="flex flex-col gap-2">
                     <ExperienceCard 
-                        name={"Dataingenjörsprogrammet, Högskolan i Gävle"} 
+                        name={"Dataingenjör, Högskolan i Gävle"} 
                         logoImgSrc={HiGLogo}
                         timePeriod='Aug 2022 - Jun 2025'
                         description={"kandidatexamen från dataingenjörsprogrammet på Högskolan i Gävle med fokus på systemutveckling, främst i Java."}
@@ -47,13 +47,13 @@ function Experience() {
                     <ExperienceCard 
                         name={"Brevbärare, PostNord"} 
                         logoImgSrc={PostNordLogo}
-                        timePeriod='Jun 2023 - Aug 2024'
+                        timePeriod='Jun 2023 - Sep 2024'
                         description={"Sommarjobbade två år som Brevbärare på PostNord i Sandviken och jobbade även extra där emellan under studierna. Jobbade mycket självständigt och under stress."}
                         listOfTags={[]}/>
                     <ExperienceCard 
                         name={"Parkarbetare, Högbo bruk"} 
                         logoImgSrc={HogboBrukLogo}
-                        timePeriod='Jun 2022 - juli 2022'
+                        timePeriod='Jun 2022 - jul 2022'
                         description={"Sommarjobbade som parkarbetare vid Högbo bruk, klippte gräs, trimmade och krattade."}
                         listOfTags={[]}/>
                 </div>}
