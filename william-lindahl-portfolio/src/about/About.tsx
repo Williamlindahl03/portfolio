@@ -1,4 +1,4 @@
-import { LocationIcon, EmailIcon } from "../svgs/svgs";
+import { LocationIcon } from "../svgs/svgs";
 import Skills from "../tech-stack/Skills";
 import Socials from "./Socials";
 import profile from "../assets/profil.jpg"
@@ -7,9 +7,9 @@ function About() {
 
   return (
     <>
-        <div id="about" className="flex flex-col items-center sm:flex-row sm:items-start sm:justify-center gap-4 flex-nowrap item-left mt-10 sm:mt-40">
+        <div id="about" className="flex flex-col items-center sm:flex-row-reverse sm:justify-between sm:items-start gap-4 flex-nowrap item-left mt-10 sm:mt-40">
             <div className="flex flex-col items-end">
-                <img className="size-[165px] rounded-full grow rota2te-y-180 p-1 m-2 border border-muted" src={profile}/> 
+                <img className="min-w-[172px] h-[172px] rounded-full grow sm:rotate-y-180 p-1 border border-muted" src={profile}/> 
             </div>
             <div className="flex flex-col gap-2">
                 <h1 className='text-primary text-4xl text-center xs:text-start xxs:text-5xl font-bold'>William Lindahl</h1>

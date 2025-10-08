@@ -1,4 +1,4 @@
-import { JavaIcon, CSharpIcon, PythonIcon, TypeScriptIcon, ReactIcon, TailwindIcon, GithubIcon, VSCodeIcon, DotNetIcon, PostgreSQLIcon, HTMLIcon, CSSIcon } from "../svgs/svgs.tsx";
+import { JavaIcon, CSharpIcon, PythonIcon, TypeScriptIcon, ReactIcon, TailwindIcon, GithubIcon, VSCodeIcon, DotNetIcon, PostgreSQLIcon } from "../svgs/svgs.tsx";
 import Skill from "./Skill.tsx";
 
 

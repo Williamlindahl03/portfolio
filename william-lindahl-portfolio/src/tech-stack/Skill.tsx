@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 
 type SkillProp = {
     logo: React.ReactNode,
