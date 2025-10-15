@@ -27,10 +27,13 @@ function ProjectDemoModal({name, type, description, listOfTags, video, linkToCod
 
                     <p className="text-muted max-w-[90%] leading-5">{description}</p>
                     <TagList listOfTags={listOfTags} />
-                    <video className="w-full" controls>
-                        <source src={video} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+                    <div className="overflow-hidden rounded-md border border-bgTertiary">
+                        <video className="w-full" controls>
+                            <source src={video} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    
                     
 
                 </div>
