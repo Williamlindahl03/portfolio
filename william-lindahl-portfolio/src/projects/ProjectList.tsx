@@ -4,7 +4,7 @@ import AsteroidDemo from "../assets/AsteroidsDemo.mp4";
 import KanbanImage from "../assets/KanbanApp.png";
 import KanbanVideo from "../assets/KanbanDemo.mp4";
 import SVTImage from "../assets/SVTApp.png";
-import SVTVideo from "/SVTAppDemo.mp4";
+import SVTVideo from "../assets/SVTAppDemo.mp4";
 import StatplayImage from "../assets/Statplay.jpg";
 import StatplayDemo from "../assets/StatplayDemo.mp4";
 import WordleImage from "../assets/wordle.png";

@@ -8,7 +8,7 @@ function Header() {
 
     useEffect(() => {
         const handleScroll = () => {
-        setScrolled(window.scrollY > 25); // true if scrolled more than 50px
+        setScrolled(window.scrollY > 25);
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -18,20 +18,17 @@ function Header() {
     useEffect(() => {
         const observer = new IntersectionObserver(
         (entries) => {
-            console.log("Scroll");
-            // Only consider sections that are in navSections
             const visible = entries
             .filter((entry) => entry.isIntersecting && navSections.includes(entry.target.id))
             .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
 
             if (visible.length > 0) {
-            setActive(visible[0].target.id); // pick closest to top
+            setActive(visible[0].target.id);
             }
         },
         { threshold: 0.5 }
         );
 
-        // Observe only the navSections
         navSections.forEach((id) => {
             
             const el = document.getElementById(id);
