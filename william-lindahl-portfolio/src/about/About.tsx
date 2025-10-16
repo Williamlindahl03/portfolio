@@ -7,7 +7,7 @@ function About() {
 
   return (
     <>
-        <div id="about" className="flex flex-col items-center sm:flex-row-reverse sm:justify-between sm:items-start gap-4 flex-nowrap item-left mt-10 sm:mt-40">
+        <div id="about" className="flex flex-col items-center sm:flex-row-reverse sm:justify-between sm:items-start gap-4 flex-nowrap item-left mt-10 sm:mt-20">
             <div className="flex flex-col items-end">
                 <img className="min-w-[172px] h-[172px] rounded-full grow sm:rotate-y-180 p-1 border border-muted" src={profile}/> 
             </div>
@@ -17,7 +17,7 @@ function About() {
                         <LocationIcon /><p className='text-muted group-hover:text-strong'>Sandviken, Gävleborg</p>
                     </a>
                 <h2 className='text-lg max-w-[250px] xs:max-w-[350px] sm:max-w-[500px] text-muted leading-6 [&_b]:text-strong'>
-                    Nyexaminerad <b>Dataingenjör</b> med intresse för utveckling inom
+                    Nyexaminerad <b>Systemutvecklare</b> med intresse för utveckling inom
                     både <b>Frontend</b> och <b>Backend</b>.
                 </h2>
                 <Socials />

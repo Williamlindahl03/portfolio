@@ -50,7 +50,7 @@ function Header() {
 
     return (
         <div className={`sticky top-2 z-100`}> 
-            <div className={`w-[350px] max-w-full gap-1 m-auto grid auto-cols-fr grid-flow-col text-muted p-1 *:truncate rounded-full transition-all duration-200 overflow-hidden ${scrolled ? "outline outline-bgTertiary bg-bgSecondary/70 backdrop-blur-xl shadow-lg shadow-black" : "py-1 outline-bgTertiary/0 shadow-none"}`}> 
+            <div className={`max-w-[350px] w-full gap-1 m-auto grid auto-cols-fr grid-flow-col text-muted p-1 *:truncate rounded-full transition-all duration-200 overflow-hidden ${scrolled ? "outline outline-bgTertiary bg-bgSecondary/100 backdrop-blur-xl shadow-lg shadow-black" : "py-1 outline-bgTertiary/0 shadow-none"}`}> 
                 <button onClick={() => scroll({top: 0, behavior: 'smooth'})} 
                         className={`transition-all border border-black/0 duration-400 flex-1 flex flex-row item-center gap-1 justify-center rounded-full cursor-pointer ${active === "about" ? "text-primary hover:text-primary border border-secondary bg-tertiary" : "hover:text-strong"}`}><AboutIcon width='16'/>Info</button>
                 <button onClick={() => scrollToElement("projects")}
