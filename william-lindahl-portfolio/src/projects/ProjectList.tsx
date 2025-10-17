@@ -42,7 +42,7 @@ function Projectlist() {
           time="Mar 2025"
           description={"Asteroids spel utvecklat i Java med Swing och fokus på implementering av relevanta design patterns, samt MVC arkitektur."} 
           listOfTags={["Java", "Swing", "MVC", "Design Patterns"]} 
-          linkToCode={"https://github.com/Williamlindahl03"}
+          linkToCode={"https://github.com/Ferresmash/Asteroids"}
           linkToDemo={""}/>
       <ProjectCard 
           image={StatplayImage}

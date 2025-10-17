@@ -40,12 +40,12 @@ function ProjectCard({image, video, name, type, time, description, listOfTags, l
               {/* <p className={`text-muted linespace-0 leading-5 text-sm`}>{description}</p> */}
               <TagList listOfTags={listOfTags} />
               <div className="flex flex-row justify-between mt-auto">
-                  {linkToCode ? <a href={linkToCode} target="_blank" className="text-primary cursor-pointer">
+                  {linkToCode ? <a href={linkToCode} onClick={(e) => e.stopPropagation()} target="_blank" className="text-primary cursor-pointer hover:text-strong">
                                   <div className="flex flex-row gap-1">
                                     <p>Kod</p><NewPageIcon width="16" color="var(--color-primary)"/>
                                   </div>
                                 </a>: null}
-                  {linkToDemo ? <a href={linkToDemo} target="_blank" className="text-primary cursor-pointer">
+                  {linkToDemo ? <a href={linkToDemo} target="_blank" className="text-primary cursor-pointer hover:text-strong">
                                   <div className="flex flex-row gap-1">
                                     <p>Besök</p><NewPageIcon width="16" color="var(--color-primary)"/>
                                   </div>
