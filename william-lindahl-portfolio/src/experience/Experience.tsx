@@ -16,7 +16,7 @@ function Experience() {
                 <button onClick={() => setShowEducation(true)} 
                     className={`${showEducation ? "text-primary border-secondary bg-tertiary":"border-bgSecondary text-muted"}`}>Utbildning</button>
                 <button onClick={() => setShowEducation(false)}
-                    className={`${!showEducation ? "text-primary border-secondary bg-tertiary":"border-bgSecondary text-muted"}`}>Arbete</button>
+                    className={`${!showEducation ? "text-primary border-secondary bg-tertiary":"border-bgSecondary text-muted"}`}>Arbetserfarenhet</button>
             </div>
             <div className="py-2">
                 {showEducation ? 
@@ -25,21 +25,21 @@ function Experience() {
                         name={"Dataingenjör, Högskolan i Gävle"} 
                         logoImgSrc={HiGLogo}
                         timePeriod='Aug 2022 - Jun 2025'
-                        description={"kandidatexamen från dataingenjörsprogrammet på Högskolan i Gävle med fokus på systemutveckling, främst i Java."}
+                        description={"Kandidatexamen från dataingenjörsprogrammet på Högskolan i Gävle med fokus på systemutveckling, främst i Java."}
                         listOfTags={["Java", "OOP", "Spring boot", "React", "Git", "HTML","CSS", "Javascript"]}/>
                     
                     <ExperienceCard 
                         name={"Introduction to Machine Learning"} 
                         logoImgSrc={HiGLogo}
                         timePeriod='Aug 2024 - Jan 2025'
-                        description={"Introkurs inom Maskininlärning på Högskolan i Gävle"}
+                        description={"Introkurs inom Maskininlärning på Högskolan i Gävle."}
                         listOfTags={["Maskininlärning", "Neural networks", "Transformers", "Python"]}/>
                     
                     <ExperienceCard 
                         name={"Teknikprogrammet, Bessemerskolan"} 
                         logoImgSrc={BessemerLogo}
                         timePeriod='Aug 2019 - Jun 2022'
-                        description={"Tog examen från Teknikprogrammet med inriktning Informationsteknik"}
+                        description={"Tog examen från Teknikprogrammet med inriktning Informationsteknik."}
                         listOfTags={["Python", "OOP", "HTML", "CSS", "JavaScript", "JQuery","C#", "Arduino"]}/>
                 </div>
                 :

@@ -31,7 +31,7 @@ function ProjectCard({image, video, name, type, time, description, listOfTags, l
                       cursor-pointer hover:border-highlight hover:shadow-xl transition-all duration-200 hover:scale-[1.01]"
             onClick={() => closeDemoModal()}>
           <img src={image ? image : myImage} className=""></img>
-          <div className="px-4 py-2 flex flex-col gap-1 grow shadow-up">
+          <div className="px-4 py-3 flex flex-col gap-1 grow shadow-up">
             <div className="flex flex-row justify-start gap-2 items-center">
               <h1 className={`text-strong font-bold text-lg leading-5`}>{name}</h1>
               <Tag bgColor="tertiary" borderColor="secondary" textColor="primary" text={type}/>

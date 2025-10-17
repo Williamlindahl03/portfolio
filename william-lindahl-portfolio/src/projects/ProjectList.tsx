@@ -20,7 +20,7 @@ function Projectlist() {
           name={"Kanban Board"} 
           type="Eget projekt"
           time="Okt 2025"
-          description={"En applikation för att skapa och hantera kanban boards, stark inspirad av trello"} 
+          description={"En applikation för att skapa och hantera kanban boards, stark inspirad av trello."} 
           listOfTags={["React", "TypeScript", "Tailwind", "C#", "ASP.NET web api", "EF Core", "PostgreSQL"]} 
           linkToCode={"https://github.com/Williamlindahl03"}
           linkToDemo={""}/>
@@ -30,7 +30,7 @@ function Projectlist() {
           name={"Projekt hos SVT Gävleborg"} 
           type="Skolprojekt"
           time="Mar 2025"
-          description={"Application for asking questions about legal documents from Acta Publica using OpenAI and RAG"} 
+          description={"Ai chatbot som besvara frågor om juridiska dokument från Acta Publica genom anvädning av RAG arkitektur."} 
           listOfTags={["React", "Python", "RAG", "Tailwind",  "LangChain", "REST API", "Agile", "Scrum"]} 
           linkToCode={""}
           linkToDemo={""}/>
@@ -50,7 +50,7 @@ function Projectlist() {
           name={"STATPLAY"} 
           type="Skolprojekt"
           time="Dec 2024"
-          description={"Hemsida med Sportstatistik från everysports API"} 
+          description={"Hemsida med Sportstatistik från everysports API."} 
           listOfTags={["React", "JavaScript", "Bootstrap", "REST API"]} 
           linkToCode={""}
           linkToDemo={""}/>
@@ -60,7 +60,7 @@ function Projectlist() {
           name={"Wordle"} 
           type="Eget projekt"
           time="Maj 2022"
-          description={"En kopia av det populära spelet Wordle, fast även med svenska ord"} 
+          description={"En kopia av det populära spelet Wordle, fast även med svenska ord."} 
           listOfTags={["HTML", "CSS", "JavaScript"]} 
           linkToCode={"https://github.com/WilliamLind03/wordle_game"}
           linkToDemo={"https://williamlind03.github.io/wordle_game/"}/>
