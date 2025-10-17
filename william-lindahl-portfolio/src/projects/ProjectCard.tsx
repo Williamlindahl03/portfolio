@@ -45,7 +45,7 @@ function ProjectCard({image, video, name, type, time, description, listOfTags, l
                                     <p>Kod</p><NewPageIcon width="16" color="var(--color-primary)"/>
                                   </div>
                                 </a>: null}
-                  {linkToDemo ? <a href={linkToDemo} target="_blank" className="text-primary cursor-pointer hover:text-strong">
+                  {linkToDemo ? <a href={linkToDemo} onClick={(e) => e.stopPropagation()} target="_blank" className="text-primary cursor-pointer hover:text-strong">
                                   <div className="flex flex-row gap-1">
                                     <p>Besök</p><NewPageIcon width="16" color="var(--color-primary)"/>
                                   </div>

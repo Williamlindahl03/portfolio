@@ -22,7 +22,7 @@ function Projectlist() {
           time="Okt 2025"
           description={"En applikation för att skapa och hantera kanban boards, stark inspirad av trello."} 
           listOfTags={["React", "TypeScript", "Tailwind", "C#", "ASP.NET web api", "EF Core", "PostgreSQL"]} 
-          linkToCode={"https://github.com/Williamlindahl03"}
+          linkToCode={"https://github.com/Williamlindahl03/ProjectManagementApp"}
           linkToDemo={""}/>
       <ProjectCard
           image={SVTImage}
